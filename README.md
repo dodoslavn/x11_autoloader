@@ -1,5 +1,5 @@
 # x11_autoloader
-Autoload environment variables for X11 pakcet forwarding via SSH.
+Autoload environment variables for X11 packet forwarding via SSH.
 
 # Why?
 Well, if you login via SSH and with X11 packter forwarding, the X11 forwarding should work fine.
