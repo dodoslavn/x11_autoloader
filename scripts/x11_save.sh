@@ -7,8 +7,8 @@ cd $(dirname "$( realpath "$0" )")
 # check if config exists
 if ! [ -a "./config.sh" ]
   then
-  echo "ERROR: Config file was not found!"
-  exit 2
+  echo "x11_autoloader - ERROR - Config file was not found!"
+  exit
   fi
 
 # load shared variables
