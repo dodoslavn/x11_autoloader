@@ -2,7 +2,7 @@
 # script to load variables for X11 forwarding from files
 
 # move to directory of this script
-cd $(dirname "$( realpath "$0" )")
+cd $(dirname "$( realpath "${BASH_SOURCE[0]}" )")
 
 # check if config exists
 if ! [ -a "./config.sh" ]
@@ -22,3 +22,6 @@ if [ -a "$TMP_DIR"/"$U.display" ] && [ -a $TMP_DIR"/"$U.xauth ]
   export DISPLAY="$(cat $TMP_DIR"/"$U.display)"
   xauth add $(cat $TMP_DIR"/"$U.xauth)
   fi
+
+# move back to home directory //probably
+cd - >/dev/null
