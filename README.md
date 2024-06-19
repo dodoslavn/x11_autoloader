@@ -15,4 +15,4 @@ Example to have it run automatically:
   
 And then you need to run the Load script after you switch the different user.  
 Example to have it run automatically: 
-> echo '. /opt/git/x11_autoloader/scripts/x11_load.sh' >> ~/.bashrc  
+> echo 'source /opt/git/x11_autoloader/scripts/x11_load.sh' >> ~/.profile
